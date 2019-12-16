@@ -1,4 +1,4 @@
-#!env python3
+#!/usr/local/bin/python3
 import os
 import csv
 import argparse
@@ -41,7 +41,7 @@ def transform_proofs(proof_csv):
     with open(proof_csv) as fh:
         rows = csv.DictReader(fh)
         for row in rows:
-            for image in ['Image1', 'Image2', 'Image3', 'Image4']:
+            for image in ['Image1', 'Image2', 'Image3', 'Image4', 'Image5', 'Image6', 'Image7', 'Image8']:
                 if image in row and row[image] != '':
                     rval[row[image]] = {
                         'first': row['Keyword1'],

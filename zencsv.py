@@ -41,7 +41,7 @@ def transform_proofs(proof_csv):
     with open(proof_csv) as fh:
         rows = csv.DictReader(fh)
         for row in rows:
-            for image in ['Image1', 'Image2', 'Image3', 'Image4', 'Image5', 'Image6', 'Image7', 'Image8']:
+            for image in ['Image1', 'Image2', 'Image3', 'Image4', 'Image5', 'Image6', 'Image7', 'Image8', 'Image9', 'Image10', 'Image 11', 'Image12', 'Image13', 'Image14', 'Image15', 'Image16', 'Image17', 'Image18']:
                 if image in row and row[image] != '':
                     rval[row[image]] = {
                         'first': row['Keyword1'],
